@@ -1,11 +1,17 @@
 body {
   height: 100vh;
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-//  color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
+
+.body-day {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.body-night {
+  background: linear-gradient(141deg, #00004d 0%, #004d66 51%, #009999 75%);
 }
 
 #main {
@@ -21,16 +27,15 @@ body {
   text-align: right;
 }
 
-a {
-  color: rgba(#000, 0.7);
+.tag-block {
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.tag-block > .tag {
+  text-align: left;
+  color: #00ff00
+}
+
+.tag-block > .content {
+  padding: 0 0 0 16px;
 }

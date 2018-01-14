@@ -10,7 +10,5 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
-    <%= yield %>
-  </body>
+  <%= content_tag(:body, yield, :class => "#{(Time.now.hour > 17) ? "body-night" : "body-day"}") %>
 </html>
