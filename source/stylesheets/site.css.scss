@@ -1,9 +1,12 @@
 body {
   height: 100vh;
+  overflow: hidden;
+  position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  color: #f3f3f3;
 }
 
 .body-day {
@@ -14,28 +17,42 @@ body {
   background: linear-gradient(141deg, #00004d 0%, #004d66 51%, #009999 75%);
 }
 
-#main {
-  position: relative;
-  height: 100vh;
-}
-
-.name {
+.main {
+  min-height: 24vh;
   position: absolute;
-  bottom: 5px;
-  right: 14px;
-  color:#f3f3f3;
+  left: 14px;
+  bottom: 22px;
+  padding: 0 0 0 14px;
+}
+
+.name-top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-weight: bold;
+}
+
+.name-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   text-align: right;
+  font-weight: bold;
 }
 
-.tag-block {
-
+.history {
+  margin-top: 42px;
 }
 
-.tag-block > .tag {
-  text-align: left;
-  color: #00ff00
+.links {
+  margin: 32px 0 32px 0;
 }
 
-.tag-block > .content {
-  padding: 0 0 0 16px;
+a:link, a:visited {
+  color: #f3f3f3;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #f3f3f3;
 }
