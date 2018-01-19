@@ -10,11 +10,13 @@ body {
 }
 
 .body-day {
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+//  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: linear-gradient(141deg, rgb(33,33,33) 0%, rgb(38,38,38) 51%, rgb(48,48,48) 75%);
 }
 
 .body-night {
-  background: linear-gradient(141deg, #00004d 0%, #004d66 51%, #009999 75%);
+//  background: linear-gradient(141deg, #00004d 0%, #004d66 51%, #009999 75%);
+  background: linear-gradient(141deg, rgb(28,28,28) 0%, rgb(33,33,33) 51%, rgb(38,38,38) 75%);
 }
 
 .main {
